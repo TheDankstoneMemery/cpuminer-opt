@@ -483,6 +483,7 @@ uint32_t* get_stratum_job_ntime();
 
 enum algos {
         ALGO_NULL,
+        ALGO_ALLIUM,
         ALGO_ANIME,
         ALGO_ARGON2,
         ALGO_AXIOM,       
@@ -557,6 +558,7 @@ enum algos {
 };
 static const char* const algo_names[] = {
         NULL,
+        "allium",
         "anime",
         "argon2",
         "axiom",
@@ -686,6 +688,7 @@ static char const usage[] = "\
 Usage: " PACKAGE_NAME " [OPTIONS]\n\
 Options:\n\
   -a, --algo=ALGO       specify the algorithm to use\n\
+                          allium       Garlicoin\n\
                           anime        Animecoin (ANI)\n\
                           argon2\n\
                           axiom        Shabal-256 MemoHash\n\

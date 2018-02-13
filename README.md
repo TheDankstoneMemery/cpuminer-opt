@@ -16,6 +16,7 @@ See file RELEASE_NOTES for change log and compile instructions.
 Supported Algorithms
 --------------------
 
+                          allium       Garlicoin
                           anime        Animecoin
                           argon2
                           axiom        Shabal-256 MemoHash
