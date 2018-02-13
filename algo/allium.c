@@ -1,5 +1,4 @@
-#include "cpuminer-config.h"
-#include "allium-gate.h"
+#include "algo-gate-api.h"
 #include <stdio.h>
 #include <string.h>
 #include <stdint.h>
@@ -88,3 +87,10 @@ int scanhash_allium(int thr_id, struct work *work, uint32_t max_nonce, uint64_t 
     *hashes_done = pdata[19] - first_nonce + 1;
     return 0;
 }
+
+bool register_allium_algo( algo_gate_t* gate )
+{
+  gate->scanhash = (void*)&scanhash_allium;
+  gate->hash     = (void*)&allium_hash;
+  return true;
+};

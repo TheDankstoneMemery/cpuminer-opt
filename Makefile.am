@@ -32,7 +32,6 @@ cpuminer_SOURCES = \
   crypto/aesb.c \
   crypto/magimath.cpp \
   algo/allium.c \
-  algo/allium-gate.c \
   algo/argon2/argon2a.c \
   algo/argon2/ar2/argon2.c \
   algo/argon2/ar2/opt.c \
